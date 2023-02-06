@@ -1,7 +1,17 @@
 import React from 'react'
 
 function SignUp() {
-    return <h1>SignUp</h1>
+    return (
+        <div>
+            <form>
+                <label htmlFor="username">User Name:</label><br/>
+                <input type="text" id="fname" name="username" value="UserName"></input><br/>
+                <label htmlFor="password">Password:</label><br/>
+                <input type="text" id="lname" name="password" value="password"></input><br/><br/>
+                <input type="submit" value="Submit"></input>
+            </form>
+        </div>
+    );
 }
 
 function SignIn() {

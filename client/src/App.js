@@ -1,4 +1,5 @@
 import React from 'react';
+import PackingList from './Cond2/PackingList';
 // import CondEnum from './Cond1/CondEnum';
 // import SwitchCase from './Cond1/SwitchCase';
 // import Garage from './Cond1/LogicalAndOperator';
@@ -16,7 +17,8 @@ function App() {
       {/* <TernaryOperator isLoggedin={true}/> */}
       {/* <Garage car={['BMW', 'Audi', 'Lambo']}/> */}
       {/* <SwitchCase role={'Admin'}/> */}
-      {/* <CondEnum state={"login"}/> */}
+      {/* <CondEnum state={"register"}/> */}
+      <PackingList />
     </>
   );
 }
