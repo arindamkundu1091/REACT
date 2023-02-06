@@ -1,5 +1,5 @@
 import React from 'react';
-import Auth from './Cond2/StateFulComponent';
+// import Auth from './Cond2/StateFulComponent';
 // import PackingList from './Cond2/PackingList';
 // import CondEnum from './Cond1/CondEnum';
 // import SwitchCase from './Cond1/SwitchCase';
