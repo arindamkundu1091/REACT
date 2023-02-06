@@ -20,7 +20,7 @@ function App() {
       {/* <SwitchCase role={'Admin'}/> */}
       {/* <CondEnum state={"register"}/> */}
       {/* <PackingList /> */}
-      <Auth />
+      {/* <Auth /> */}
     </>
   );
 }
