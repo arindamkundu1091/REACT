@@ -13,8 +13,10 @@ function Home() {
     function ModeChange() {
         if(mode === "light") {
             setMode("dark");
+            document.body.style.backgroundColor = '#222';
         } else {
             setMode("light");
+            document.body.style.backgroundColor = 'white';
         }
     }
 
@@ -22,10 +24,10 @@ function Home() {
         <div>
             <Navbar mode={mode} ModeChange={ModeChange}/>
             <Carousel/>
-            <Details />
-            <Sponsors />
-            <PageNav />
-            <Footer />
+            <Details  mode={mode}/>
+            <Sponsors mode={mode}/>
+            <PageNav mode={mode}/>
+            <Footer mode={mode}/>
         </div>
     )
 }

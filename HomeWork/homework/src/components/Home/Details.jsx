@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Details() {
-
-
+function Details(props) {
 
     return (
-        <div className='my-3'>
+        <div className='my-3' style={{backgroundColor: props.mode === "light" ? "white" : "#222", color: props.mode === "light" ? "black" : "white"}}>
             <div className="row">
                 <div className="medium-6 columns medium-push-6">
                     <img className="thumbnail" src="https://via.placeholder.com/750x350" alt='...'/>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+function Footer(props) {
 
     const list1 =[
         {name: "Service", href: "/"},
@@ -27,7 +27,7 @@ function Footer() {
     return (
         <div>
             <hr />
-            <footer className="section footer-linked bg-gray-700">
+            <footer className="section footer-linked bg-gray-700" style={{backgroundColor: props.mode === "light" ? "white" : "#222", color: props.mode === "light" ? "black" : "white"}}>
                 <div className="footer-linked-main">
                 <div className="container">
                     <div className="row row-50">
