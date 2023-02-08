@@ -6,17 +6,20 @@ import Footer from './components/FixedComponents/Footer';
 
 function App() {
 
-  const[mode, setMode] = useState("light");
+  let bg_mode = localStorage.getItem("bg_mode");
+  const[mode, setMode] = useState(bg_mode===null?"light":bg_mode);
 
     function ModeChange() {
-        if(mode === "light") {
-            setMode("dark");
-            document.body.style.backgroundColor = '#222';
+      if(mode === "light") {
+          setMode("dark");
         } else {
-            setMode("light");
-            document.body.style.backgroundColor = 'white';
-        }
+          setMode("light");
+      }
     }
+
+    localStorage.removeItem("bg_mode");
+    localStorage.setItem("bg_mode", mode);
+    document.body.style.backgroundColor = bg_mode==="dark"?"#222":"white";
 
   return (
     <>

@@ -18,6 +18,7 @@ function PageNav(props) {
 
     return (
         <div className='my-2' style={{backgroundColor: props.mode === "light" ? "white" : "#222", color: props.mode === "light" ? "black" : "white"}}>
+            <hr/>
             <nav aria-label="Page navigation example" >
                 <ul className="pagination justify-content-center" >
                     {ShowFooter}

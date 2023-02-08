@@ -14,6 +14,8 @@ function Sponsors(props) {
     const ShowSponsor = sponsorList.map((e, i) => {
         return (
             <div className="col" key={i} style={{backgroundColor: props.mode === "light" ? "white" : "#222", color: props.mode === "light" ? "black" : "white"}}>
+                <hr/>
+                <span className="badge text-bg-secondary">Ad</span>
                 <div className="card">
                     <img src={e.src} className="card-img-top" alt="..."/>
                     <div className="card-body" style={{backgroundColor: props.mode === "light" ? "white" : "#333", color: props.mode === "light" ? "black" : "white"}}>
