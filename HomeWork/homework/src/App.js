@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Home from './components/Home/Home';
-import Navbar from './components/Home/Navbar';
-import Footer from './components/Home/Footer';
+import Navbar from './components/FixedComponents/Navbar';
+import Footer from './components/FixedComponents/Footer';
 
 
 function App() {
