@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Home from './components/Home/Home';
 import Navbar from './components/FixedComponents/Navbar';
 import Footer from './components/FixedComponents/Footer';
+// import About from './components/About/About';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <>
       <Navbar mode={mode} ModeChange={ModeChange}/>
       <Home mode={mode}/>
+      {/* <About mode={mode}/> */}
       <Footer mode={mode}/>
     </>
   );
