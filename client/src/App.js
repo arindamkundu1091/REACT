@@ -1,5 +1,5 @@
 import React from 'react';
-import List1, { List2, Blog, SubList, OtherMap } from './DataMap/List'
+import List1, { List2, Blog, SubList, OtherMap } from './DataMap/List1'
 
 function App() {
   const NameList = ['Anjani', 'Debasish', 'Azim', 'Sourav']

@@ -87,7 +87,7 @@ export function SubList(props) {
     const MyList = props.Data;
 
     const ListItems = MyList.map((element) => {
-        //console.log(element);
+        // console.log(element);
         <ListItem item={element} />
     });
 
