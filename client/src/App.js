@@ -1,12 +1,13 @@
 import React from 'react';
-// import DemoHooks from './Hooks/DenoHooks';
+import Problem2 from './Hooks/UseStateHooks/Problem2';
+// import Problem1 from './Hooks/UseStateHooks/Problem1';
 
 function App() {
 
   return (
     <>
-      {/* <DemoHooks /> */}
-      
+      {/* <Problem1 /> */}
+      <Problem2 />
     </>
   );
 }
