@@ -19,7 +19,7 @@ function Navbar(props) {
                     <Link className="nav-link" to="about">About</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href='/'>Features</a>
+                    <Link className="nav-link disabled" to='/'>Features</Link>
                     </li>
                 </ul>
                 <form className="d-flex" role="search">
