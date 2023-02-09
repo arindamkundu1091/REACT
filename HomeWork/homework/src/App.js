@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import { Routes, Route } from "react-router-dom"
 import Home from './components/Home/Home';
 import Navbar from './components/FixedComponents/Navbar';
 import Footer from './components/FixedComponents/Footer';
-// import About from './components/About/About';
+import About from './components/About/About';
 
 
 function App() {
@@ -25,8 +26,10 @@ function App() {
   return (
     <>
       <Navbar mode={mode} ModeChange={ModeChange}/>
-      <Home mode={mode}/>
-      {/* <About mode={mode}/> */}
+      <Routes>
+        <Route exact path="home" element={<Home mode={mode}/>}/>
+        <Route exact path="about" element={<About mode={mode}/>}/>
+      </Routes>
       <Footer mode={mode}/>
     </>
   );
