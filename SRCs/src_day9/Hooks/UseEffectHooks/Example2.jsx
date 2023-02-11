@@ -1,26 +1,43 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
-function Example2() {
+export default function Example2() {
 
-    const [count1, setCount1] = useState(0);
-    const [count2, setCount2] = useState(0);
+    const [count, setCount] = useState(0);
 
+    const [calculation, setCalculation] = useState(0);
+
+    //! This code Run Every Render with component 
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setCount((count) => count + 1)
+    //     }, 1000)
+    // })
+
+    //! This code Run First Render with component 
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setCount((count) => count + 1)
+    //     }, 1000)
+    // }, [])
+
+
+    //! this code Run based on button click
     useEffect(() => {
-            console.log('You have click button 1.');
-    },[count1]);
-
-    useEffect(() => {
-        console.log('You have click button 2.');
-    },[count2]);
+        setCalculation(() => count * 2);
+    }, [count])
 
     return (
         <React.Fragment>
-            <p>Count1: {count1}</p>
-            <button onClick={() => {setCount1(count1+1)}}> + </button>
-            <p>Count2: {count2}</p>
-            <button onClick={() => {setCount2(count2-1)}}> - </button>
+            <div>The Counte is {count}</div>
+            <button onClick={() => setCount((c) => c + 1)}>+</button>
+            <p>Calculation:{calculation}</p>
         </React.Fragment>
+
+
+
+
+
+
+
     )
 }
-
-export default Example2
