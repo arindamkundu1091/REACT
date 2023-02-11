@@ -2,8 +2,22 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 function Navbar(props) {
+
+    // function addButton() {
+    //     const userData = localStorage.getItem('userData');
+    //     const navForm = document.getElementById('navForm');
+    //     if(userData === null) {
+    //         navForm.innerHTML = `<div><button className="btn btn-outline-success mx-1" type="submit">Sign up</button>
+    //                             <a className="btn btn-outline-success mx-1" role="button" type="submit">Log in</a></div>`;
+    //     } else {
+    //         navForm.innerHTML = `<button className="btn btn-outline-success mx-1" type="submit">Profile</button>`;
+    //     }
+    // }
+    
+    // useEffect(addButton,[]);
+
     return (
-        <div>
+        <React.Fragment>
             <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to="home">PageTitle</Link>
@@ -27,13 +41,16 @@ function Navbar(props) {
                         <input className="form-check-input my-2" type="checkbox" role="switch" onClick={props.ModeChange} id="flexSwitchCheckDefault" />
                         <label className={`form-check-label my-1 text-${props.mode === "light"? "dark" : "light"}`} htmlFor="flexSwitchCheckDefault">Enable {props.mode === "light" ? "Dark" : "Light"} Mode</label>
                     </div>
-                    <button className="btn btn-outline-success mx-1" type="submit">Sign up</button>
-                    <button className="btn btn-outline-success mx-1" type="submit">Log in</button>
+                    <div id='navForm'>
+                        <Link className="btn btn-outline-success mx-1" role='button' to='signup'>Sign up</Link>
+                        <a className="btn btn-outline-success mx-1" role='button' href='/'>Log in</a>
+                    </div>
                 </form>
                 </div>
             </div>
             </nav>
-        </div>
+            
+        </React.Fragment>
     )
 }
 
