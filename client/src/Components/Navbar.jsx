@@ -1,20 +1,42 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React from "react";
+import { Outlet, NavLink} from "react-router-dom"
 
-export default function Navbar() {
+
+// const layout = () => {
+//     return (
+//         <>
+//             <nav>
+//                 <ul>
+//                     <li>Home</li>
+//                     <li>About</li>
+//                     <li>Cantct</li>
+//                     <li>Gallary</li>
+//                 </ul>
+//             </nav>
+//         </>
+//     )
+// }
+
+
+function Layout() {
     return (
-        <div className='navbar navbar-expand-lg navbar-dark bg-dark'>
-            <div className='row col-sm-4'>
-                <div className='col col-3'>
-                    <Link className='btn btn-outline-primary' role='button' to="/">Home</Link>
-                </div>
-                <div className='col col-3'>
-                    <Link className='btn btn-outline-primary' role='button' to="/about">About</Link>
-                </div>
-                <div className='col col-3'>
-                    <Link className='btn btn-outline-primary' role='button' to="/contact">Contact</Link>
-                </div>
+        <>
+            <nav>
+                <ul>
+                    <li> <NavLink to='/'>Home</NavLink> </li>
+                    <li><NavLink to='/about'>About</NavLink></li>
+                    <li><NavLink to='/contact'>Contact</NavLink></li>
+                    <li><NavLink to='/gallary'>Gallary</NavLink></li>
+                </ul>
+            </nav>
+            <div>
+                <Outlet />
             </div>
-        </div>
+        </>
     )
 }
+
+
+
+
+export default Layout;
