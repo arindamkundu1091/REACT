@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
+        <div className='navbar navbar-expand-lg navbar-dark bg-dark'>
+            <div className='row col-sm-4'>
+                <div className='col col-3'>
+                    <Link className='btn btn-outline-primary' role='button' to="/">Home</Link>
+                </div>
+                <div className='col col-3'>
+                    <Link className='btn btn-outline-primary' role='button' to="/about">About</Link>
+                </div>
+                <div className='col col-3'>
+                    <Link className='btn btn-outline-primary' role='button' to="/contact">Contact</Link>
+                </div>
+            </div>
         </div>
     )
 }
