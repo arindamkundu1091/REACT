@@ -1,14 +1,18 @@
 import React from 'react'
-import Header from './components/header/Header';
-import Main from './components/main/Main';
-import Footer from './components/footer/Footer';
+import './App.css'
+import QuizPage from './components/QuizPage';
+import ShowResult from './components/ShowResult';
+import StartQuiz from './components/StartQuiz';
+import Result from './components/Result';
 
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <h2 className="heading">Quizz App</h2>
+      <StartQuiz />
+      <QuizPage />
+      <ShowResult />
+      <Result/>
     </>
   );
 }
