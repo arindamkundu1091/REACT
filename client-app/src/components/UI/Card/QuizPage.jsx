@@ -1,6 +1,20 @@
 import React from 'react'
+import ShowResult from '../Button/ShowResult';
 
 export default function QuizPage() {
+
+    // const [score, setScore] = React.useState(0);
+    const [state, setState] = React.useState(true);
+
+    const show = () => {
+        if (state) {
+            return (
+                <ShowResult />
+            )
+        } else {
+        }
+    }
+
     return (
         <React.Fragment>
             <div>
@@ -50,6 +64,7 @@ export default function QuizPage() {
                     </div>
                 </div>
             </div>
+            {show()}
         </React.Fragment>
     )
 }
