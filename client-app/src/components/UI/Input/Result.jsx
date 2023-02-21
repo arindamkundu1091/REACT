@@ -7,12 +7,12 @@ export default function Result() {
 
     return (
         <>
-            <StartQuiz/>
             <div className='center'>
                 <div style={{width: "650px", textAlign:"center", backgroundColor: "rgb(235, 156, 125)"}}>
-                    <p>You scored {score} out of 5</p>
+                    <p>You have answered {score} / 5 correctly</p>
                 </div>
             </div>
+            <StartQuiz/>
         </>
     )
 }
