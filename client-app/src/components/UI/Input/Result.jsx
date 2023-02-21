@@ -6,8 +6,8 @@ export default function Result() {
         <>
             <StartQuiz/>
             <div className='center'>
-                <div className='startdiv' style={{width: "650px", backgroundColor: "rgb(235, 156, 125)"}}>
-                    <a className='start' role='button' href='/'>You have answered correctly</a>
+                <div style={{width: "650px", textAlign:"center", backgroundColor: "rgb(235, 156, 125)"}}>
+                    <p>You have answered correctly</p>
                 </div>
             </div>
         </>

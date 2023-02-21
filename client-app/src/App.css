@@ -7,6 +7,8 @@
   grid-column-gap: 15px;
   grid-template-columns: auto auto auto auto auto auto;
 }
+
+
 .card{
   border: 0px solid grey;
   border-radius: 3px;
@@ -24,6 +26,8 @@
 .question{
   color: white;
 }
+
+
 .btn{
   margin: 0px 2px;
   width: 90px;
@@ -31,10 +35,10 @@
   border: 1px solid black;
   border-radius: 3px;
   padding: 10px 20px;
+  cursor: pointer;
   text-align: center;
   box-shadow: 1px 2px;
 }
-
 .bigbtn{
   margin: 0px 2px;
   width: 110px;
@@ -43,17 +47,21 @@
   border-radius: 3px;
   padding: 10px 20px;
   box-shadow: 1px 1px;
-}
-.btn:hover{
   cursor: pointer;
 }
+.btn:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+}
+.bigbtn:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+}
+
 
 .submitdiv{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .submit{
   background-color:rgb(1, 99, 97);
   color: white ;
@@ -62,6 +70,11 @@
   text-decoration: none;
   box-shadow: 1px 2px rgb(0, 0, 0);
 }
+.submit:hover{
+  background-color:rgb(5, 79, 77);
+  cursor: pointer;
+}
+
 
 .startdiv{
   width: 450px;
@@ -74,12 +87,20 @@
   justify-content: center;
   box-shadow: 1px 1px black;
 }
-
 .start{
   color: black ;
   border-radius: 3px;
   text-decoration: none;
 }
+.start:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+  cursor: pointer;
+}
+.startdiv:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+  cursor: pointer;
+}
+
 
 .center {
   margin: auto;
