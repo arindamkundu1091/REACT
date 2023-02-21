@@ -6,9 +6,18 @@ export default function QuizPage() {
     const [state, setState] = React.useState(false);
     const [count, setCount] = React.useState(0);
     const [score, setScore] = React.useState(1);
+    const [name, setName] = React.useState('q1');
+
+    const disable = () => {
+        let element = document.getElementsByClassName(name);
+        for(var i = 0; i < 4; i++) {
+            element[i].disabled = true;
+        }
+    }
 
     const counter = () => {
         setCount(count + 1);
+        disable();
     }
     
     useEffect(() => {
@@ -38,16 +47,16 @@ export default function QuizPage() {
                 <div className="main">
                     <div className="card card1">
                         <h3 className="question">Who is the father of our nation ?</h3>
-                        <button className="bigbtn" onClick={scoreCoutner}>
+                        <button className="bigbtn q1" onClick={scoreCoutner}>
                             Mahatma Gandhi
                         </button>
-                        <button className="bigbtn" onClick={counter}>
+                        <button className="bigbtn q1" onClick={counter}>
                             Jawaharlal Nehru
                         </button>
-                        <button className="bigbtn" onClick={counter}> 
+                        <button className="bigbtn q1" onClick={counter}> 
                             Donal Trump
                         </button>
-                        <button className="bigbtn" onClick={counter}> 
+                        <button className="bigbtn q1" onClick={counter}> 
                             Barrack Obama
                         </button>
                     </div>
