@@ -102,6 +102,12 @@
 }
 
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+
 .center {
   margin: auto;
   padding: 10px;

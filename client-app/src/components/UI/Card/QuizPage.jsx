@@ -12,6 +12,7 @@ export default function QuizPage() {
         let element = document.getElementsByClassName(name);
         for(var i = 0; i < 4; i++) {
             element[i].disabled = true;
+            element[i].style.pointerEvents = "none";
         }
     }
 
@@ -62,31 +63,31 @@ export default function QuizPage() {
                     </div>
                     <div className="card card1">
                         <h3 className="question">What color is are the leaves ?</h3>
-                        <button className="btn" onClick={counter}>Blue</button>
-                        <button className="btn" onClick={counter}>Red</button>
-                        <button className="btn" onClick={counter}>Yellow</button>
-                        <button className="btn" onClick={scoreCoutner}>Green</button>
+                        <button className="btn q2" onClick={counter}>Blue</button>
+                        <button className="btn q2" onClick={counter}>Red</button>
+                        <button className="btn q2" onClick={counter}>Yellow</button>
+                        <button className="btn q2" onClick={scoreCoutner}>Green</button>
                     </div>
                     <div className="card card2">
                         <h3 className="question">What color is the sky ?</h3>
-                        <button className="btn" onClick={scoreCoutner}>Blue</button>
-                        <button className="btn" onClick={counter}>Red</button>
-                        <button className="btn" onClick={counter}>Yellow</button>
-                        <button className="btn" onClick={counter}>Green</button>
+                        <button className="btn q3" onClick={scoreCoutner}>Blue</button>
+                        <button className="btn q3" onClick={counter}>Red</button>
+                        <button className="btn q3" onClick={counter}>Yellow</button>
+                        <button className="btn q3" onClick={counter}>Green</button>
                     </div>
                     <div className="card card2">
                         <h3 className="question">What color is the sky ?</h3>
-                        <button className="btn" onClick={scoreCoutner}>Blue</button>
-                        <button className="btn" onClick={counter}>Red</button>
-                        <button className="btn" onClick={counter}>Yellow</button>
-                        <button className="btn" onClick={counter}>Green</button>
+                        <button className="btn q4" onClick={scoreCoutner}>Blue</button>
+                        <button className="btn q4" onClick={counter}>Red</button>
+                        <button className="btn q4" onClick={counter}>Yellow</button>
+                        <button className="btn q4" onClick={counter}>Green</button>
                     </div>
                     <div className="card card2">
                         <h3 className="question">What color is the fire ?</h3>
-                        <button className="btn" onClick={counter}>Blue</button>
-                        <button className="btn" onClick={counter}>Red</button>
-                        <button className="btn" onClick={scoreCoutner}>Yellow</button>
-                        <button className="btn" onClick={counter}>Green</button>
+                        <button className="btn q5" onClick={counter}>Blue</button>
+                        <button className="btn q5" onClick={counter}>Red</button>
+                        <button className="btn q5" onClick={scoreCoutner}>Yellow</button>
+                        <button className="btn q5" onClick={counter}>Green</button>
                     </div>
                 </div>
             </div>
