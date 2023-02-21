@@ -1,0 +1,67 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 366px;
+    border-radius: 25px;
+    width: 120vh;
+    height: 80vh;
+    background-image: repeating-linear-gradient(rgba(2, 43, 179, 0.673),rgba(0, 255, 255, 0.673));
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 65px;
+    background-color: white;
+}
+
+.heading p{
+	text-align: center;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 76px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.time{
+    margin-bottom: 50px;
+    margin-top: 5px;
+    font-size: 60px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+
+.btn{
+    font-size: 20px;
+    height: 45px;
+    width: 90px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-right: 4px solid rgba(0, 0, 0, 0.829);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.847);
+    border-top: 4px solid rgba(109, 109, 109, 0.761);
+    border-left: 4px solid rgba(109, 109, 109, 0.792);
+    border-radius: 4px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(179, 179, 179, 0.603);
+}
