@@ -12,6 +12,7 @@ export default function Result() {
                     <p>You have answered {score} / 5 correctly</p>
                 </div>
             </div>
+            <br/>
             <StartQuiz/>
         </>
     )
