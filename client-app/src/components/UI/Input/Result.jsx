@@ -2,7 +2,6 @@ import React from 'react'
 import StartQuiz from '../Button/StartQuiz';
 
 export default function Result(props) {
-    console.log(props.score);
     return (
         <>
             <StartQuiz/>

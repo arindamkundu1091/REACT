@@ -1,6 +1,5 @@
 import React ,{useEffect} from 'react'
 import ShowResult from '../Button/ShowResult';
-import Result from '../Input/Result';
 
 export default function QuizPage() {
 
@@ -22,7 +21,6 @@ export default function QuizPage() {
         setScore(score + 1);
         console.log(score);
         counter();
-        <Result score={score} />
     }
 
     const show = () => {
