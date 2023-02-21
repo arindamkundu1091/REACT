@@ -1,0 +1,116 @@
+.heading{
+  text-align: center;
+}
+.main{
+  margin: 10px 50px;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+
+.card{
+  border: 0px solid grey;
+  border-radius: 3px;
+  background-color: rgba(111, 1, 45, 0.603);
+  padding: 10px;
+  margin: 10px;
+}
+.card1{
+  grid-column: span 3;
+}
+.card2{
+  grid-column: span 2;
+}
+
+.question{
+  color: white;
+}
+
+
+.btn{
+  margin: 0px 2px;
+  width: 90px;
+  background-color: rgba(255, 199, 140, 0.923);
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 1px 2px;
+}
+.bigbtn{
+  margin: 0px 2px;
+  width: 110px;
+  background-color: rgba(255, 199, 140, 0.923);
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+}
+.bigbtn:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+}
+
+
+.submitdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit{
+  background-color:rgb(1, 99, 97);
+  color: white ;
+  border-radius: 3px;
+  padding: 10px ;
+  text-decoration: none;
+  box-shadow: 1px 2px rgb(0, 0, 0);
+}
+.submit:hover{
+  background-color:rgb(5, 79, 77);
+  cursor: pointer;
+}
+
+
+.startdiv{
+  width: 450px;
+  height: 25px;
+  background-color:rgba(240, 185, 127, 0.923);
+  color: white ;
+  border-radius: 3px;
+  padding: 10px ;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px black;
+}
+.start{
+  color: black ;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.start:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+  cursor: pointer;
+}
+.startdiv:hover{
+  background-color: rgba(217, 152, 83, 0.923);
+  cursor: pointer;
+}
+
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+
+.center {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center
+}
