@@ -6,9 +6,9 @@ export default function QuizPage() {
     const [state, setState] = React.useState(false);
     const [count, setCount] = React.useState(0);
     const [score, setScore] = React.useState(1);
-    const [name, setName] = React.useState('q1');
+    
 
-    const disable = () => {
+    const disable = (name) => {
         let element = document.getElementsByClassName(name);
         for(var i = 0; i < 4; i++) {
             element[i].disabled = true;
@@ -16,9 +16,10 @@ export default function QuizPage() {
         }
     }
 
-    const counter = () => {
+    const counter = (event) => {
+        let n = event.target.className;
         setCount(count + 1);
-        disable();
+        disable(n);
     }
     
     useEffect(() => {
@@ -27,10 +28,9 @@ export default function QuizPage() {
         }
     }, [setState, count]);
     
-    const scoreCoutner = () => {
+    const scoreCoutner = (event) => {
         setScore(score + 1);
-        console.log(score);
-        counter();
+        counter(event);
     }
 
     const show = () => {
