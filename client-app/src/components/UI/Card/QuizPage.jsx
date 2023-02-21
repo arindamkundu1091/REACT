@@ -5,7 +5,7 @@ export default function QuizPage() {
 
     const [state, setState] = React.useState(false);
     const [count, setCount] = React.useState(0);
-    const [score, setScore] = React.useState(1);
+    const [score, setScore] = React.useState(0);
     
 
     const disable = (name) => {
@@ -26,7 +26,9 @@ export default function QuizPage() {
         if (count === 5) {
             setState(true);
         }
-    }, [setState, count]);
+        localStorage.removeItem("score");
+        localStorage.setItem("score", score);
+    }, [setState, count, score]);
     
     const scoreCoutner = (event) => {
         setScore(score + 1);
